@@ -12,8 +12,6 @@
 // You can read more here:
 // https://on.cypress.io/configuration
 // ***********************************************************
-
-
 Cypress.Commands.add('backgroundLogin', () => {
     cy.request({
         method: 'POST',

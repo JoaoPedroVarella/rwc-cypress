@@ -13,6 +13,16 @@ class Routes{
         cy.route('GET', `**/api/aticles/${name}-**`).as(this.as.getArticleTitle)
         cy.route('GET', `**/api/aticles/${name}-**/coments`).as(this.as.getArticleTitleComments)
     }
+
+    initMocks(){
+        cy.server();
+        cy.route({
+            method: '',
+            url: '',
+            body: {},
+            status: ''
+        }).as(this.as.postArticle)
+    }
 }
 
 

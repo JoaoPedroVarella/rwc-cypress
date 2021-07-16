@@ -2,8 +2,6 @@
 
 import articles from '../support/pages/articles'
 
-import suport from '../support/'
-
 import routes from '../support/routes'
 
 context('Publicação', () => {
